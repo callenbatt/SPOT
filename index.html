@@ -110,7 +110,11 @@
 			    max-width: 800px;
 			    margin: 64px auto;
 			">
-				<article id="first">
+				<article id="first" style="
+				    margin-bottom: 64px;
+				    padding-bottom: 64px;
+				    border-bottom: #dddddd;
+				">
 					<h2 style="
 					    font-weight: 300;
 					    text-transform: uppercase;
@@ -122,7 +126,13 @@
 					</p>
 					<p>Google uses their most commonly know domain, google.com, as their <strong>Primary</strong> Domain. The other domains, like google.net, are used as <strong>Alias</strong> Domains. When a user types in the Primary Domain into the browser, they're brought to the Primary Domain (no surprise there, google.com goes to google.com!). However, when a user types in google.net into the browser, they are brought to google.com. The Alias Domain resolves to the Primary Domain.
 					</p>
-					<h5>What you should know</h5>
+					<h5 style="
+					    font-size: 20px;
+					    margin: 24px 0 24px 32px;
+					    font-style: italic;
+					    font-weight: 700;
+					    color: #169ac7;
+					">What you should know</h5>
 					<p>You can have several Alias domains which point to your Primary Domain in Composer. The Finalsite Support Team should be able to set those up for you at the time you launch the site or through a <a href="http://composer.finalsite.com/cf_support/parature.cfm?newTicket=ticket" target="_blank">Support Ticket</a>.
 					</p>
 					<p>If you are already using your Alias Domains, the Support Team will configure those in Composer so that they'll still be active when you decide to launch the new site. Since your DNS is already configured to point to our servers, you won't have to do anything to keep them active.
@@ -132,7 +142,11 @@
 					<p>With either of these scenarios, we're using Server-Side Redirects, so the SSL certificate will be checked against any URL. You should already have an SSL certificate for your Primary Domain, but Alias Domain typically do not have SSL certificates. This means that if a user types "https" in the Alias Domain URL instead of "http" or just the bare URL, they will be shown a security warning instead of being immediately redirected to the Primary Domain. This is a highly unusual case, but still something to be aware of. For more information on SSL Certificates, see our SSL page.
 					</p>
 				</article>
-				<article id="second">
+				<article id="second" style="
+				    margin-bottom: 64px;
+				    padding-bottom: 64px;
+				    border-bottom: #dddddd;
+				">
 					<h2 style="
 					    font-weight: 300;
 					    text-transform: uppercase;
@@ -140,7 +154,13 @@
 					">"I'd like to use multiple domains for different areas of our site"</h2>
 					<p>Let's say you have your main site at www.mylittlesite.com. Say you have a really important summer program that you'd like to promote, and you'd like it to have it's own domain, like www.mysummerprogram.com. In Composer, you can manage both domains under the same administration panel. Composer allows you to post content and utilize elements and modules across multiple domains, or Secondary Domains, so you can create specialized domains to handle your specialized content.
 					</p>
-					<h5>What you should know</h5>
+					<h5 style="
+					    font-size: 20px;
+					    margin: 24px 0 24px 32px;
+					    font-style: italic;
+					    font-weight: 700;
+					    color: #169ac7;
+					">What you should know</h5>
 					<p>Any Secondary Domain needs to be set up during the Deployment stage or by anyone on the Support Team. If you're currently using a Secondary Domain with your Page Manager site, you'll likely have this set up during the Deployment phase, and because the DNS is already configured for that domain to point to our servers, it will go live at the same time as the Primary Domain and you can check with your Project Manager or submit a <a href="http://composer.finalsite.com/cf_support/parature.cfm?newTicket=ticket" target="_blank">Support Ticket</a> to have a Secondary Domain set up for you.
 					</p>
 					<p>Once the Secondary Domain is set up in Composer, you can add pages and post content just like you would in the Primary Domain. If you'd like the pages to be accessible under the Secondary Domain, for instance 'www.mysummerprogram.com/page', then you can create pages under that Domain the same way you would under the Primary Domain. If you'd instead prefer to have the Secondary Domain point to an area of the site under the Primary domain, for instance having 'www.mysummerprogram.com/page' redirect users to 'www'mylittlesite.com/summer-program/page', you can use Linked Pages to accomplish this. Just create a page under the Secondary Domain with a URL that you'd like to point to a page under the Primary Domain, make it a Linked page in the Page Settings, and point it to the page you'd like the user to end up on.
@@ -148,7 +168,11 @@
 					<p>With either of these scenarios, we're using Server-Side Redirects, so the SSL certificate will be checked against any URL. You should already have an SSL certificate for your Primary Domain, but Secondary Domains and all other domains typically do not have SSL certificates. This means that if a user types "https" in the Secondary Domain URL instead of "http" or just the bare URL, they will be shown a security warning instead of being immediately redirected to the Primary Domain. This might not happen typically, but it's still something to be aware of. For more information on SSL Certificates, see our SSL page.
 					</p>
 				</article>
-				<article id="third">
+				<article id="third" style="
+				    margin-bottom: 64px;
+				    padding-bottom: 64px;
+				    border-bottom: #dddddd;
+				">
 					<h2 style="
 					    font-weight: 300;
 					    text-transform: uppercase;
@@ -156,7 +180,13 @@
 					">"I'd like to use Sub-Domains for multiple sites"</h2>
 					<p>The most common use-case we see for sub-domains is for Districts sites or sites that encompass several organizations. Sub-domains allow several sites to be managed under one URL and on one Composer build. For example, if a school district's Primary Domain is 'www.schooldistrict.com', and there's an elementary, middle, and high school, sub-domains allow each school to have their own site URL like 'elementary.schooldistrict.com', 'middle.schooldistrict.com', and 'high.schooldistrict.com'.
 					</p>
-					<h5>What you should know</h5>
+					<h5 style="
+					    font-size: 20px;
+					    margin: 24px 0 24px 32px;
+					    font-style: italic;
+					    font-weight: 700;
+					    color: #169ac7;
+					">What you should know</h5>
 					<p>Subdomains need to be set up during the Deployment stage or by anyone on the Support Team. They work similar to the Primary Domain, in that the pages under them will inherit their URL. The URLs are something you'll want to coordinate with Support prior to launch through a <a href="http://composer.finalsite.com/cf_support/parature.cfm?newTicket=ticket" target="_blank">Support Ticket</a>. We need to know which subdomain URL to associate with each domain in Composer before the redesign site is launched.
 					</p>
 					<p>If you are setting up new subdomains on your Composer site, there's a few DNS configurations you'll need to make. Unlike the Primary or Secondary domains, the DNS settings for subdomains will only require a CNAME, not an A Record. Since the A Record for the main URL is already pointing to our IP address, subdomains only require a CNAME to point to keyword.finalsite.com (where 'keyword' is your site's Finalsite Keyword). The subdomain is treated as an alias, just like 'www', so for instance a DNS setup for middle.schooldistrict.com would just be to create a CNAME where 'middle' is the alias, and it points to schooldistrict.finalsite.com (or wherever the CNAME for 'www' points to).
@@ -165,7 +195,7 @@
 					</p>
 				</article>
 				<nav style="
-				    margin: 64px 32px 0;
+				    margin: 0 32px;
 				    display: flex;
 				    flex-wrap: wrap;
 				    justify-content: space-between;

@@ -14,367 +14,373 @@
 		</style>
 	</head>
 	<body>
-		<article style="font-family: 'Open Sans';">
-			<header>
-				<section style="width:100%; background:#f5f5f5;">
-					<img src="Logo_604.png" style="width:82px;float:left;margin: 0 16px 0 8px;">
-					<h4 style="
-					    font-size: 20px;
-					    color: #163052;
-					    line-height: 56px;
-					    float: left;
-					    margin: 0 16px 0 0;
-					    font-weight: 400;
-					">Launching Your Site</h4>
-					<h5 style="
-					    font-size: 16px;
-					    color: #163052;
-					    line-height: 36px;
-					    margin: 0 16px 0 0;
-					    font-weight: 300;
-					    padding-top: 10px;
-					">Coming from Page Manager</h5>
-				</section>
-				<h1 style="
-				    clear: both;
-				    font-size: 32px;
-				    color: #169ac7;
-				    text-align: center;
-				    margin: 64px 8px 0;
-				">Multiple Domains or Subdomains</h1>
-				<h3 style="
-				    text-align: center;
-				    margin: 0 8px 32px;
-				    font-weight: 300;
-				    color: #bbbbbb;
-				    font-size: 18px;
-				">yourschoolsports.com or athletics.yourschool.com</h3>
-				<p style="
-				    max-width: 800px;
-				    margin: 0 auto;
-				    color: #454545;
-				">
-					Composer makes using multiple domains an subdomains super easy. You may have a site directory set up which already uses multiple domains or subdomains, or you may have multiple domains resolving to one primary domain, or this might be something that you're thinking about incoporating into your new Composer site. This guide should be able to help you congfigure everything ahead of time prior to launch. Just click on the scenario below that best matches yours.
-				</p>
-				<nav style="
-				    margin: 64px 8px;
-				">
-					<ul style="
-					    display: flex;
-					    flex-wrap: wrap;
-					    justify-content: space-around;
-					">
-						<li style="
-						    list-style: none;
-						">
-							<a href="#first" style="
-							    text-decoration: none;
-							    background: #f5f5f5;
-							    border: 1px solid #dddddd;
-							    box-sizing: border-box;
-							    padding: 8px 16px;
-							    font-size: 12px;
-							    text-transform: uppercase;
-							">"I'd like to have 2 or more domains pointing to one site"</a>
-						</li>
-						<li style="
-						    list-style: none;
-						">
-							<a href="#second" style="
-							    text-decoration: none;
-							    background: #f5f5f5;
-							    border: 1px solid #dddddd;
-							    box-sizing: border-box;
-							    padding: 8px 16px;
-							    font-size: 12px;
-							    text-transform: uppercase;
-							">"I'd like to use multiple domains for different areas of our site"</a>
-						</li>
-						<li style="
-						    list-style: none;
-						">
-							<a href="#third" style="
-							    text-decoration: none;
-							    background: #f5f5f5;
-							    border: 1px solid #dddddd;
-							    box-sizing: border-box;
-							    padding: 8px 16px;
-							    font-size: 12px;
-							    text-transform: uppercase;
-							">"I'd like to use Sub-Domains for multiple sites"</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<section style="
-			    max-width: 800px;
-			    margin: 64px auto;
-			">
-				<article id="first" style="
-				    margin-bottom: 64px;
-				    padding-bottom: 64px;
-				    border-bottom: #dddddd;
-				">
-					<h2 style="
-					    font-weight: 300;
-					    text-transform: uppercase;
-					    color: #163052;
-					">"I'd like to have 2 or more domains pointing to one site"</h2>
-					<p>Sometimes website owners like to purchase and use multiple domains to catch users and point them to their Primary URL. A great example of this would be "google.com" and "google.net". Most people know Google's search page can be accessed at google.com, but Google also owns google.us, google.net, and several others. Most of the time, this is to protect brand identity or to catch users that are used to entering URLs into their browser a certain way; imagine a user typing google.net into their browser and getting a completely different site, or even worse, a site that <em>looks</em> like Google, but is instead a scammy or malicious site.
-					</p>
-					<p>
-					</p>
-					<p>Google uses their most commonly know domain, google.com, as their <strong>Primary</strong> Domain. The other domains, like google.net, are used as <strong>Alias</strong> Domains. When a user types in the Primary Domain into the browser, they're brought to the Primary Domain (no surprise there, google.com goes to google.com!). However, when a user types in google.net into the browser, they are brought to google.com. The Alias Domain resolves to the Primary Domain.
-					</p>
-					<h5 style="
-					    font-size: 20px;
-					    margin: 24px 0 24px 32px;
-					    font-style: italic;
-					    font-weight: 700;
-					    color: #169ac7;
-					">What you should know</h5>
-					<p>You can have several Alias domains which point to your Primary Domain in Composer. The Finalsite Support Team should be able to set those up for you at the time you launch the site or through a <a href="http://composer.finalsite.com/cf_support/parature.cfm?newTicket=ticket" target="_blank">Support Ticket</a>.
-					</p>
-					<p>If you are already using your Alias Domains, the Support Team will configure those in Composer so that they'll still be active when you decide to launch the new site. Since your DNS is already configured to point to our servers, you won't have to do anything to keep them active.
-					</p>
-					<p>If you have new domains that you're thinking of using as Alias Domains, you'll have to configure the DNS for them to match the DNS configuration of your Primary Domain. You'll also have to let the Support Team know about the Alias Domains you plan to use so we can configure them on our end. The best way to do this is to fill out a <a href="http://composer.finalsite.com/cf_support/parature.cfm?newTicket=ticket" target="_blank">Support Ticket</a> so one of the team members can guide you through the process, but you can also check out the DNS Configuration page for more info.
-					</p>
-					<p>With either of these scenarios, we're using Server-Side Redirects, so the SSL certificate will be checked against any URL. You should already have an SSL certificate for your Primary Domain, but Alias Domain typically do not have SSL certificates. This means that if a user types "https" in the Alias Domain URL instead of "http" or just the bare URL, they will be shown a security warning instead of being immediately redirected to the Primary Domain. This is a highly unusual case, but still something to be aware of. For more information on SSL Certificates, see our SSL page.
-					</p>
-				</article>
-				<article id="second" style="
-				    margin-bottom: 64px;
-				    padding-bottom: 64px;
-				    border-bottom: #dddddd;
-				">
-					<h2 style="
-					    font-weight: 300;
-					    text-transform: uppercase;
-					    color: #163052;
-					">"I'd like to use multiple domains for different areas of our site"</h2>
-					<p>Let's say you have your main site at www.mylittlesite.com. Say you have a really important summer program that you'd like to promote, and you'd like it to have it's own domain, like www.mysummerprogram.com. In Composer, you can manage both domains under the same administration panel. Composer allows you to post content and utilize elements and modules across multiple domains, or Secondary Domains, so you can create specialized domains to handle your specialized content.
-					</p>
-					<h5 style="
-					    font-size: 20px;
-					    margin: 24px 0 24px 32px;
-					    font-style: italic;
-					    font-weight: 700;
-					    color: #169ac7;
-					">What you should know</h5>
-					<p>Any Secondary Domain needs to be set up during the Deployment stage or by anyone on the Support Team. If you're currently using a Secondary Domain with your Page Manager site, you'll likely have this set up during the Deployment phase, and because the DNS is already configured for that domain to point to our servers, it will go live at the same time as the Primary Domain and you can check with your Project Manager or submit a <a href="http://composer.finalsite.com/cf_support/parature.cfm?newTicket=ticket" target="_blank">Support Ticket</a> to have a Secondary Domain set up for you.
-					</p>
-					<p>Once the Secondary Domain is set up in Composer, you can add pages and post content just like you would in the Primary Domain. If you'd like the pages to be accessible under the Secondary Domain, for instance 'www.mysummerprogram.com/page', then you can create pages under that Domain the same way you would under the Primary Domain. If you'd instead prefer to have the Secondary Domain point to an area of the site under the Primary domain, for instance having 'www.mysummerprogram.com/page' redirect users to 'www'mylittlesite.com/summer-program/page', you can use Linked Pages to accomplish this. Just create a page under the Secondary Domain with a URL that you'd like to point to a page under the Primary Domain, make it a Linked page in the Page Settings, and point it to the page you'd like the user to end up on.
-					</p>
-					<p>With either of these scenarios, we're using Server-Side Redirects, so the SSL certificate will be checked against any URL. You should already have an SSL certificate for your Primary Domain, but Secondary Domains and all other domains typically do not have SSL certificates. This means that if a user types "https" in the Secondary Domain URL instead of "http" or just the bare URL, they will be shown a security warning instead of being immediately redirected to the Primary Domain. This might not happen typically, but it's still something to be aware of. For more information on SSL Certificates, see our SSL page.
-					</p>
-				</article>
-				<article id="third" style="
-				    margin-bottom: 64px;
-				    padding-bottom: 64px;
-				    border-bottom: #dddddd;
-				">
-					<h2 style="
-					    font-weight: 300;
-					    text-transform: uppercase;
-					    color: #163052;
-					">"I'd like to use Sub-Domains for multiple sites"</h2>
-					<p>The most common use-case we see for sub-domains is for Districts sites or sites that encompass several organizations. Sub-domains allow several sites to be managed under one URL and on one Composer build. For example, if a school district's Primary Domain is 'www.schooldistrict.com', and there's an elementary, middle, and high school, sub-domains allow each school to have their own site URL like 'elementary.schooldistrict.com', 'middle.schooldistrict.com', and 'high.schooldistrict.com'.
-					</p>
-					<h5 style="
-					    font-size: 20px;
-					    margin: 24px 0 24px 32px;
-					    font-style: italic;
-					    font-weight: 700;
-					    color: #169ac7;
-					">What you should know</h5>
-					<p>Subdomains need to be set up during the Deployment stage or by anyone on the Support Team. They work similar to the Primary Domain, in that the pages under them will inherit their URL. The URLs are something you'll want to coordinate with Support prior to launch through a <a href="http://composer.finalsite.com/cf_support/parature.cfm?newTicket=ticket" target="_blank">Support Ticket</a>. We need to know which subdomain URL to associate with each domain in Composer before the redesign site is launched.
-					</p>
-					<p>If you are setting up new subdomains on your Composer site, there's a few DNS configurations you'll need to make. Unlike the Primary or Secondary domains, the DNS settings for subdomains will only require a CNAME, not an A Record. Since the A Record for the main URL is already pointing to our IP address, subdomains only require a CNAME to point to keyword.finalsite.com (where 'keyword' is your site's Finalsite Keyword). The subdomain is treated as an alias, just like 'www', so for instance a DNS setup for middle.schooldistrict.com would just be to create a CNAME where 'middle' is the alias, and it points to schooldistrict.finalsite.com (or wherever the CNAME for 'www' points to).
-					</p>
-					<p>Subdomains may also require what's called a Wildcard SSL Certificate, which is an SSL certificate that is applied to all subdomains under a primary domain. It's best to check with your Project Manager about this during the deployment phase to see that it's included in the project build. While it's not exactly necessary, forms with payment attached to them won't work without the SSL certificate, and any user attempting to reach the subdomains over https will receive a browser warning that the page requested is not secure. For more information on SSL Certificates, see our SSL page.
-					</p>
-				</article>
-				<nav style="
-				    margin: 0 32px;
-				    display: flex;
-				    flex-wrap: wrap;
-				    justify-content: space-between;
-				">
-					<a href="#" style="
-					    background: #169ac7;
-					    color: #ffffff;
-					    text-decoration: none;
-					    padding: 8px 16px;
-					    font-weight: 300;
-					    text-transform: uppercase;
-					    font-size: 12px;
-					">« Previous</a>
-					<a href="#" style="
-					    background: #169ac7;
-					    color: #ffffff;
-					    text-decoration: none;
-					    padding: 8px 16px;
-					    font-weight: 300;
-					    text-transform: uppercase;
-					    font-size: 12px;
-					">Redirecting Old Pages »</a>
-				</nav>
-			</section>
-			<footer style="
-			    color: #ffffff;
-			    background: #4d4d4d;
-			">
-				<nav style="
-				    max-width: 800px;
-				    margin: 0 auto;
-				    display: flex;
-				    flex-wrap: wrap;
-				    justify-content: space-around;
-				">
-					<ul>
-					<h6 style="
-					    margin: 0 0 16px;
-					    color: dddddd;
-					    font-weight: 400;
-					    font-size: 16px;
-					    text-align: center;
-					    border-bottom: 1px solid #dddddd;
-					    padding: 8px 16px;
-					">Welcome to Support!</h6>
-						<li style="
-						    list-style: none;
-						">
-							<a href="#" style="
-							    text-decoration: none;
-							    padding: 8px 16px;
-							    display: block;
-							    box-sizing: border-box;
-							    width: 100%;
-							    color: #ffffff;
-							    font-weight: 300;
-							    font-size: 12px;
-							    margin-bottom: 8px;
-							">Logging in and Accessing the Support Portal</a>
-						</li>
-						<li style="
-						    list-style: none;
-						">
-							<a href="#" style="
-							    text-decoration: none;
-							    padding: 8px 16px;
-							    display: block;
-							    box-sizing: border-box;
-							    width: 100%;
-							    color: #ffffff;
-							    font-weight: 300;
-							    font-size: 12px;
-							    margin-bottom: 8px;
-							">Helpful Resources</a>
-						</li>
-						<li style="
-						    list-style: none;
-						">
-							<a href="#" style="
-							    text-decoration: none;
-							    padding: 8px 16px;
-							    display: block;
-							    box-sizing: border-box;
-							    width: 100%;
-							    color: #ffffff;
-							    font-weight: 300;
-							    font-size: 12px;
-							    margin-bottom: 8px;
-							">Submitting a Ticket</a>
-						</li>
-						<li style="
-						    list-style: none;
-						">
-							<a href="#" style="
-							    text-decoration: none;
-							    padding: 8px 16px;
-							    display: block;
-							    box-sizing: border-box;
-							    width: 100%;
-							    color: #ffffff;
-							    font-weight: 300;
-							    font-size: 12px;
-							    margin-bottom: 8px;
-							">Emergency Info</a>
-						</li>
-					</ul>
-					<ul>
-					<h6 style="
-					    margin: 0 0 16px;
-					    color: dddddd;
-					    font-weight: 400;
-					    font-size: 16px;
-					    text-align: center;
-					    border-bottom: 1px solid #dddddd;
-					    padding: 8px 16px;
-					">Launching Your Site</h6>
-						<li style="
-						    list-style: none;
-						">
-							<a href="#" style="
-							    text-decoration: none;
-							    padding: 8px 16px;
-							    display: block;
-							    box-sizing: border-box;
-							    width: 100%;
-							    color: #ffffff;
-							    font-weight: 300;
-							    font-size: 12px;
-							    margin-bottom: 8px;
-							">Multiple Domains or Subdomains</a>
-						</li>
-						<li style="
-						    list-style: none;
-						">
-							<a href="#" style="
-							    text-decoration: none;
-							    padding: 8px 16px;
-							    display: block;
-							    box-sizing: border-box;
-							    width: 100%;
-							    color: #ffffff;
-							    font-weight: 300;
-							    font-size: 12px;
-							    margin-bottom: 8px;
-							">Redirecting Old Pages</a>
-						</li>
-						<li style="
-						    list-style: none;
-						">
-							<a href="#" style="
-							    text-decoration: none;
-							    padding: 8px 16px;
-							    display: block;
-							    box-sizing: border-box;
-							    width: 100%;
-							    color: #ffffff;
-							    font-weight: 300;
-							    font-size: 12px;
-							    margin-bottom: 8px;
-							">Launch Day</a>
-						</li>
-						<li style="
-						    list-style: none;
-						">
-							<a href="#" style="
-							    text-decoration: none;
-							    padding: 8px 16px;
-							    display: block;
-							    box-sizing: border-box;
-							    width: 100%;
-							    color: #ffffff;
-							    font-weight: 300;
-							    font-size: 12px;
-							    margin-bottom: 8px;
-							">Post Launch</a>
-						</li>
-					</ul>
-				</nav>
-			</footer>
-		</article>
-	
+		<style>
+    .main-wrapper {
+    line-height: 28px;
+    font-size: 16px;
+    color: #4d4d4d;
+    font-family: sans-serif;
+    }
+    .top-header .top-section {
+    width: 100%;
+    background: #f5f5f5;
+    }
+    .top-header .top-section img {
+    width: 82px;
+    float: left;
+    margin: 0px 16px 0px 8px;
+    }
+    .top-header .top-section h4 {
+    font-size: 20px;
+    color: #163052;
+    line-height: 56px;
+    float: left;
+    margin: 0px 16px 0px 0px;
+    font-weight: 400;
+    }
+    .top-header .top-section h5 {
+    font-size: 16px;
+    color: #163052;
+    line-height: 36px;
+    margin: 0px 16px 0px 0px;
+    font-weight: 300;
+    padding-top: 10px;
+    }
+    .top-header h1 {
+    clear: both;
+    font-size: 32px;
+    color: #169ac7;
+    text-align: center;
+    margin: 64px 8px 0px;
+    }
+    .top-header h3 {
+    text-align: center;
+    margin: 8px 8px 32px;
+    font-weight: 300;
+    color: #bbbbbb;
+    font-size: 18px;
+    }
+    .top-header p {
+    max-width: 800px;
+    margin: 0px auto;
+    color: #454545;
+    padding: 0px 24px;
+    box-sizing: border-box;
+    }
+    .top-header nav {
+    margin: 32px 8px;
+    }
+    .top-header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px;
+    }
+    .top-header nav ul li {
+    list-style: none;
+    margin: 16px 0px;
+    }
+    .top-header nav ul li a {
+    text-decoration: none;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    font-size: 12px;
+    display: block;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    text-align: center;
+    background: #f5f5f5;
+    }
+    .top-header nav ul li a:hover {
+    }
+    .middle-section {
+    max-width: 800px;
+    margin: 48px auto;
+    padding: 0px 24px;
+    }
+    .middle-section .middle-article {
+    margin-bottom: 64px;
+    padding-bottom: 64px;
+    border-bottom: 1px solid #dddddd;
+    }
+    .middle-section .middle-article h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #163052; margin: -32px 0px 16px;
+    padding-top: 32px;
+    }
+    .middle-section .middle-article h5 {
+    font-size: 18px;
+    margin: 24px 8px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 700; color: #169ac7;
+    }
+    .middle-section .middle-article p {
+    }
+    .middle-section .middle-article p a {
+    }
+    .middle-section .middle-article p a:hover {
+    }
+    .middle-section .middle-article p em {
+    }
+    .middle-section .middle-article p strong {
+    }
+    .middle-section nav {
+    margin: 0px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    .middle-section nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 8px;
+    background: #169ac7;
+    }
+    .middle-section nav a:hover{
+    }
+    .footer {
+    color: #ffffff;
+    background: #4d4d4d;
+    }
+    .footer nav {
+    max-width: 800px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    .footer nav ul {
+    margin: 0px;
+    width: 304px;
+    }
+    .footer nav ul h6 {
+    margin: 16px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+    padding: 8px 16px;
+    }
+    .footer nav ul li {
+    list-style: none;
+    }
+    .footer nav ul li a {
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 8px;
+    }
+    .footer nav ul li a:hover {
+    }
+</style>
+<article class="main-wrapper">
+<header class="top-header">
+<section class="top-section">
+<img alt="" src="https://raw.githubusercontent.com/callenbatt/SPOT/gh-pages/Logo_604.png" />
+<h4>Launching Your Site</h4>
+<h5>Coming from SchoolSuite</h5>
+</section>
+<h1>Multiple Domains or Subdomains</h1>
+<h3>yourschoolsports.com or athletics.yourschool.com</h3>
+<p>
+Composer makes using multiple domains an subdomains super easy. You may have a site directory set up which already uses multiple domains or subdomains, or you may have multiple domains resolving to one primary domain, or this might be something that you're thinking about incorporating into your new Composer site. This guide should be able to help you configure everything ahead of time prior to launch. Just click on the scenario below that best matches yours.
+</p>
+<nav>
+<ul>
+    <li>
+    <a href="#first">"I'd like to have 2 or more domains pointing to one site"</a>
+    </li>
+    <li>
+    <a href="#second">"I'd like to use multiple domains for different areas of our site"</a>
+    </li>
+    <li>
+    <a href="#third">"I'd like to use Sub-Domains for multiple sites"</a>
+    </li>
+</ul>
+</nav>
+</header>
+<section class="middle-section">
+<article class="middle-article" id="first">
+<h2>"I'd like to have 2 or more domains pointing to one site"</h2>
+<p>
+Sometimes website owners like to purchase and use multiple domains to catch users and point them to their Primary URL. A great example of this would be "google.com" and "google.net". Most people know Google's search page can be accessed at google.com, but Google also owns google.us, google.net, and several others. Most of the time, this is to protect brand identity or to catch users that are used to entering URLs into their browser a certain way; imagine a user typing google.net into their browser and getting a completely different site, or even worse, a site that <em>looks</em> like Google, but is instead a scammy or malicious site.
+</p>
+<p>
+Google uses their most commonly know domain, google.com, as their Primary Domain. The other domains, like google.net, are used as Alias Domains. When a user types in the Primary Domain into the browser, they're brought to the Primary Domain (no surprise there, google.com goes to google.com!). However, when a user types in google.net into the browser, they are brought to google.com. The Alias Domain resolves to the Primary Domain.
+</p>
+<h5>What you should know</h5>
+<p>
+You can have several Alias domains which point to your Primary Domain in Composer. The Finalsite Support Team should be able to set those up for you at the time you launch the site or through a <a href="http://composer.finalsite.com/cf_support/parature.cfm?newTicket=ticket" target="_blank">Support Ticket</a>.
+</p>
+<p>
+If you are already using your Alias Domains, the Support Team will configure those in Composer so that they'll still be active when you decide to launch the new site. Since your DNS is already configured to point to our servers, you won't have to do anything to keep them active.
+</p>
+<p>
+If you have new domains that you're thinking of using as Alias Domains, you'll have to configure the DNS for them to match the DNS configuration of your Primary Domain. You'll also have to let the Support Team know about the Alias Domains you plan to use so we can configure them on our end. The best way to do this is to fill out a <a href="http://composer.finalsite.com/cf_support/parature.cfm?newTicket=ticket" target="_blank">Support Ticket</a> so one of the team members can guide you through the process, but you can also check out the DNS Configuration page for more info.
+</p>
+<p>
+With either of these scenarios, we're using Server-Side Redirects, so the SSL certificate will be checked against any URL. You should already have an SSL certificate for your Primary Domain, but Alias Domain typically do not have SSL certificates. This means that if a user types "https" in the Alias Domain URL instead of "http" or just the bare URL, they will be shown a security warning instead of being immediately redirected to the Primary Domain. This is a highly unusual case, but still something to be aware of. For more information on SSL Certificates, see our SSL page.
+</p>
+</article>
+<article class="middle-article" id="second">
+<h2>I'd like to use multiple domains for different areas of our site"</h2>
+<p>
+Let's say you have your main site at www.mylittlesite.com. Say you have a really important summer program that you'd like to promote, and you'd like it to have it's own domain, like www.mysummerprogram.com. In Composer, you can manage both domains under the same administration panel. Composer allows you to post content and utilize elements and modules across multiple domains, or Secondary Domains, so you can create specialized domains to handle your specialized content.
+</p>
+<h5>What you should know</h5>
+<p>
+Any Secondary Domain needs to be set up during the Deployment stage or by anyone on the Support Team. If you're currently using a Secondary Domain with your Schoolsuite site, you'll likely have this set up during the Deployment phase; if not you can check with your Project Manager or submit a <a href="http://composer.finalsite.com/cf_support/parature.cfm?newTicket=ticket" target="_blank">Support Ticket</a> to have a Secondary Domain set up for you inside Composer.
+</p>
+<p>
+Once the Secondary Domain is set up in Composer, you can add pages and post content just like you would in the Primary Domain. If you'd like the pages to be accessible under the Secondary Domain, for instance 'www.mysummerprogram.com/page', then you can create pages under that Domain the same way you would under the Primary Domain. If you'd instead prefer to have the Secondary Domain point to an area of the site under the Primary domain, for instance having 'www.mysummerprogram.com/page' redirect users to 'www'mylittlesite.com/summer-program/page', you can use Linked Pages to accomplish this. Just create a page under the Secondary Domain with a URL that you'd like to point to a page under the Primary Domain, make it a Linked page in the Page Settings, and point it to the page you'd like the user to end up on.
+</p>
+<p>
+Any Secondary Domain needs to have the same DNS settings as the Primary Domain in order to work properly. Instructions for setting the Primary Domain and any Secondary Domains will be sent to you in detail in the form of a Support Ticket created during the Site Launch Orientation call. It's very important to rely on the instructions sent in the ticket, as they will be customized to suit your site and situation specifically, but typically these settings are:
+</p>
+<table style="line-height: 1.5em; border: 1px solid #dddddd; width: 100%; border-collapse: separate; border-spacing: 4px;">
+    <colgroup><col style="width: 33%;" /><col style="width: 33%;" /><col style="width: 34%;" /></colgroup>
+    <tbody>
+        <tr>
+            <td style="text-align: center; border-width: 0px 0px 1px; border-style: solid; border-color: #f2f2f2; background-color: #f2f2f2;">Host
+            </td>
+            <td style="text-align: center; border-width: 0px 0px 1px; border-style: solid; border-color: #f2f2f2; background-color: #f2f2f2;">Type
+            </td>
+            <td style="text-align: center; border-width: 0px 0px 1px; border-style: solid; border-color: #f2f2f2; background-color: #f2f2f2;">Points to
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">    @
+            </td>
+            <td style="text-align: center;">    A Record<br />
+            </td>
+            <td style="text-align: center;">    50.56.64.4
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">    www
+            </td>
+            <td style="text-align: center;">    CNAME
+            </td>
+            <td style="text-align: center;">    keyword.finalsite.com
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+<span style="font-size: 12px;">*keyword.finalsite.com refers to the production URL, where "keyword" is your site's Finalsite keyword</span>
+</p>
+<p>
+With either of these scenarios, we're using Server-Side Redirects, so the SSL certificate will be checked against any URL. You should already have an SSL certificate for your Primary Domain, but Secondary Domains and all other domains typically do not have SSL certificates. This means that if a user types "https" in the Secondary Domain URL instead of "http" or just the bare URL, they will be shown a security warning instead of being immediately redirected to the Primary Domain. This might not happen typically, but it's still something to be aware of. For more information on SSL Certificates, see our SSL page.
+</p>
+</article>
+<article class="middle-article" id="third">
+<h2>"I'd like to use Sub-Domains for multiple sites"</h2>
+<p>
+The most common use-case we see for sub-domains is for Districts sites or sites that encompass several organizations. Sub-domains allow several sites to be managed under one URL and on one Composer build. For example, if a school district's Primary Domain is 'www.schooldistrict.com', and there's an elementary, middle, and high school, sub-domains allow each school to have their own site URL like 'elementary.schooldistrict.com', 'middle.schooldistrict.com', and 'high.schooldistrict.com'.
+</p>
+<h5>What you should know</h5>
+<p>
+Subdomains need to be set up during the Deployment stage or by anyone on the Support Team. They work similar to the Primary Domain, in that the pages under them will inherit their URL. The URLs are something you'll want to coordinate with Support prior to launch through a <a href="http://composer.finalsite.com/cf_support/parature.cfm?newTicket=ticket" target="_blank">Support Ticket</a>. We need to know which subdomain URL to associate with each domain in Composer before the redesign site is launched.
+</p>
+<p>
+If you are setting up new subdomains on your Composer site, there's a few DNS configurations you'll need to make. Unlike the Primary or Secondary domains, the DNS settings for subdomains will only require a CNAME, not an A Record. Since the A Record for the main URL is already pointing to our IP address, subdomains only require a CNAME to point to keyword.finalsite.com (where 'keyword' is your site's Finalsite Keyword). The subdomain is treated as an alias, just like 'www', so for instance a DNS setup for middle.schooldistrict.com would just be to create a CNAME where 'middle' is the alias, and it points to schooldistrict.finalsite.com (or wherever the CNAME for 'www' points to). Here's an example:
+</p>
+<table style="line-height: 1.5em; border: 1px solid #dddddd; width: 100%; border-collapse: separate; border-spacing: 4px;">
+    <colgroup><col style="width: 33%;" /><col style="width: 33%;" /><col style="width: 34%;" /></colgroup>
+    <tbody>
+        <tr>
+            <td style="text-align: center; border-width: 0px 0px 1px; border-style: solid; border-color: #f2f2f2; background-color: #f2f2f2;">Host
+            </td>
+            <td style="text-align: center; border-width: 0px 0px 1px; border-style: solid; border-color: #f2f2f2; background-color: #f2f2f2;">Type
+            </td>
+            <td style="text-align: center; border-width: 0px 0px 1px; border-style: solid; border-color: #f2f2f2; background-color: #f2f2f2;">Points to
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">    @
+            </td>
+            <td style="text-align: center;">    A Record<br />
+            </td>
+            <td style="text-align: center;">    50.56.64.4
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">    www
+            </td>
+            <td style="text-align: center;">    CNAME
+            </td>
+            <td style="text-align: center;">    schooldistrict.finalsite.com
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">    elementary
+            </td>
+            <td style="text-align: center;">    CNAME
+            </td>
+            <td style="text-align: center;">    schooldistrict.finalsite.com
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">    middle
+            </td>
+            <td style="text-align: center;">    CNAME
+            </td>
+            <td style="text-align: center;">    schooldistrict.finalsite.com
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">    high
+            </td>
+            <td style="text-align: center;">    CNAME
+            </td>
+            <td style="text-align: center;">    schooldistrict.finalsite.com
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+In this example, we've set the DNS so that the Primary Domain is available at www.schooldistrict.com, and subdomains are accessible at elementary.schooldistrict.com, middle.schooldistrict.com, and high.schooldistrict.com.
+</p>
+<p>
+Instructions for setting the Primary Domain and any subdomains will be sent to you in detail in the form of a Support Ticket created during the Site Launch Orientation call. It's very important to rely on the instructions sent in the ticket, as they will be customized to suit your site and situation specifically, but typically these settings will resemble those in the table above.
+</p>
+<p>
+Subdomains may also require what's called a Wildcard SSL Certificate, which is an SSL certificate that is applied to all subdomains under a primary domain. It's best to check with your Project Manager about this during the deployment phase to see that it's included in the project build. While it's not exactly necessary, forms with payment attached to them won't work without the SSL certificate, and any user attempting to reach the subdomains over https will receive a browser warning that the page requested is not secure. For more information on SSL Certificates, see our SSL page.
+</p>
+</article>
+<nav>
+<a href="https://training.finalsite.com/DesktopModules/Interzoic.AccordLMS/TextHtmlLoader.aspx?LEID=bc2dcb45-8a31-4b08-b3c7-440de5259cc7&amp;FId=7d7bebc2-8c32-4087-8b02-57369e2c6ec3&amp;MId=492&amp;PortalId=0&amp;TbId=112">Redirecting Old Pages &raquo;</a>
+</nav>
+</section>
+<footer class="footer">
+<nav>
+<ul>
+    <h6>Welcome to Support!</h6>
+    <li><a href="https://training.finalsite.com/DesktopModules/Interzoic.AccordLMS/TextHtmlLoader.aspx?LEID=8c0b23a6-a53d-4b2b-a730-da8ba3bc5d14&amp;FId=768d8d37-8597-448e-8e8b-fb586473e133&amp;MId=492&amp;PortalId=0&amp;TbId=112">Logging in and Accessing the Support Portal</a></li>
+    <li><a href="https://training.finalsite.com/DesktopModules/Interzoic.AccordLMS/TextHtmlLoader.aspx?LEID=98bdc1a6-e8ad-4be8-851b-afbaa1418a93&amp;FId=768d8d37-8597-448e-8e8b-fb586473e133&amp;MId=492&amp;PortalId=0&amp;TbId=112">Helpful Resources</a></li>
+    <li><a href="https://training.finalsite.com/DesktopModules/Interzoic.AccordLMS/TextHtmlLoader.aspx?LEID=fe39b0c1-7620-4f9c-bcaf-b4353d4621da&amp;FId=768d8d37-8597-448e-8e8b-fb586473e133&amp;MId=492&amp;PortalId=0&amp;TbId=112">Submitting a Ticket</a></li>
+    <li><a href="https://training.finalsite.com/DesktopModules/Interzoic.AccordLMS/TextHtmlLoader.aspx?LEID=3a466bdb-60ce-4cc7-b213-b731b37886da&amp;FId=768d8d37-8597-448e-8e8b-fb586473e133&amp;MId=492&amp;PortalId=0&amp;TbId=112">Emergency Info</a></li>
+</ul>
+<ul>
+    <h6>Launching Your Site</h6>
+    <li><a href="https://training.finalsite.com/DesktopModules/Interzoic.AccordLMS/TextHtmlLoader.aspx?LEID=6626156f-f088-467f-a399-b610cf787fff&amp;FId=7d7bebc2-8c32-4087-8b02-57369e2c6ec3&amp;MId=492&amp;PortalId=0&amp;TbId=112">Multiple Domains or Subdomains</a></li>
+    <li><a href="https://training.finalsite.com/DesktopModules/Interzoic.AccordLMS/TextHtmlLoader.aspx?LEID=bc2dcb45-8a31-4b08-b3c7-440de5259cc7&amp;FId=7d7bebc2-8c32-4087-8b02-57369e2c6ec3&amp;MId=492&amp;PortalId=0&amp;TbId=112">Redirecting Old Pages</a></li>
+    <li><a href="https://training.finalsite.com/DesktopModules/Interzoic.AccordLMS/TextHtmlLoader.aspx?LEID=6e7061f1-ca17-46f6-b9c6-ed3af48ebcdb&amp;FId=7d7bebc2-8c32-4087-8b02-57369e2c6ec3&amp;MId=492&amp;PortalId=0&amp;TbId=112">Search</a></li>
+    <li><a href="https://training.finalsite.com/DesktopModules/Interzoic.AccordLMS/TextHtmlLoader.aspx?LEID=25764c51-6032-4bda-a487-95256f0ed3cd&amp;FId=7d7bebc2-8c32-4087-8b02-57369e2c6ec3&amp;MId=492&amp;PortalId=0&amp;TbId=112">SSL</a></li>
+    <li><a href="https://training.finalsite.com/DesktopModules/Interzoic.AccordLMS/TextHtmlLoader.aspx?LEID=5abf63c0-a1ec-4d27-846d-487cabc862d9&amp;FId=7d7bebc2-8c32-4087-8b02-57369e2c6ec3&amp;MId=492&amp;PortalId=0&amp;TbId=112">Launch Day</a></li>
+</ul>
+</nav>
+</footer>
+</article>
 </body></html>
